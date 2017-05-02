@@ -1,0 +1,32 @@
+{
+  "name": "blackome",
+  "version": "0.1.0",
+  "description": "personal page made in react & nextjs",
+  "main": "pages/index.js",
+  "scripts": {
+    "dev": "next",
+    "build": "next build",
+    "start": "next start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/icarlossz/blackome.git"
+  },
+  "keywords": [
+    "personal",
+    "react",
+    "next"
+  ],
+  "author": "CarlosSz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/icarlossz/blackome/issues"
+  },
+  "dependencies": {
+    "next": "^2.1.1",
+    "nprogress": "^0.2.0",
+    "react": "^15.4.2",
+    "react-dom": "^15.4.2",
+    "styled-jsx": "^0.5.7"
+  }
+}

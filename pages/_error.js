@@ -7,7 +7,8 @@ const Error = () => (
 		<div className="errorMsg">
 			<h1>404</h1>
 			<h2>Lo sentimos, la pagina que buscas no existe...</h2>
-			<style jsx>{`
+			<style>{`
+				.error { padding-bottom: 50px; }
 				.errorMsg h1 {
 					color: #FFF;
 					display: inline-block;
@@ -28,5 +29,5 @@ const Error = () => (
 )
 
 
-export default () => (<Layout title="Error" content={Error} />)
+export default () => (<Layout title="Not Found" content={Error} />)
 

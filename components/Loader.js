@@ -7,6 +7,7 @@ import Router from 'next/router'
 Router.onRouteChangeStart = (url) => {
   console.log(`Loading: ${url}`)
   NProgress.start()
+  NProgress.set(0.3)
 }
 Router.onRouteChangeComplete = () => NProgress.done()
 Router.onRouteChangeError = () => NProgress.done()
@@ -17,13 +18,13 @@ const linkStyle = {
 
 export default () => (
   <div style={{ marginBottom: 20 }}>
-    <style jsx>{`
+    <style>{`
       #nprogress {
         pointer-events: none;
       }
 
       #nprogress .bar {
-        background: #FFF;
+        background: #29d;
 
         position: fixed;
         z-index: 1031;
@@ -31,7 +32,7 @@ export default () => (
         left: 0;
 
         width: 100%;
-        height: 20px;
+        height: 3px;
       }
 
       /* Fancy blur effect */
@@ -41,7 +42,7 @@ export default () => (
         right: 0px;
         width: 100px;
         height: 100%;
-        box-shadow: 0 0 10px #fff, 0 0 5px #fff;
+        box-shadow: 0 0 10px #fff, 0 0 5px #29d;
         opacity: 1.0;
 
         -webkit-transform: rotate(3deg) translate(0px, -4px);

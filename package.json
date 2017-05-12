@@ -1,6 +1,6 @@
 {
   "name": "blackome",
-  "version": "0.1.0",
+  "version": "0.1.5",
   "description": "personal page made in react & nextjs",
   "main": "pages/index.js",
   "scripts": {
@@ -27,6 +27,6 @@
     "nprogress": "^0.2.0",
     "react": "^15.4.2",
     "react-dom": "^15.4.2",
-    "styled-jsx": "^0.5.7"
+    "styled-components": "^1.4.6"
   }
 }

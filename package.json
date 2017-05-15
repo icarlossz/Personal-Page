@@ -1,6 +1,6 @@
 {
   "name": "blackome",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "personal page made in react & nextjs",
   "main": "pages/index.js",
   "scripts": {
@@ -23,6 +23,7 @@
     "url": "https://github.com/icarlossz/blackome/issues"
   },
   "dependencies": {
+    "isomorphic-fetch": "^2.2.1",
     "next": "^2.1.1",
     "nprogress": "^0.2.0",
     "react": "^15.4.2",

@@ -11,14 +11,21 @@ export default () => (
     		<a>
    				<svg><rect x="0" y="0" fill="none" width="100%" height="100%" /></svg>
    				Biografia
-    			<div className="mobile"><img src="/static/document.svg" alt="Bio"/></div>
+    			<div className="mobile"><img src="/static/avatar.svg" alt="Bio"/></div>
     		</a>
+	    </Link></li>
+	    <li><Link prefetch href="/portafolio">
+	    	<a>
+    			<svg><rect x="0" y="0" fill="none" width="100%" height="100%" /></svg>
+    			Portafolio
+	    		<div className="mobile"><img src="/static/portafolio.svg" alt="Portafolio"/></div>
+	    	</a>
 	    </Link></li>
 	    <li><Link prefetch href="/contact">
 	    	<a>
     			<svg><rect x="0" y="0" fill="none" width="100%" height="100%" /></svg>
     			Contacto
-	    		<div className="mobile"><img src="/static/contact.svg" alt="Bio"/></div>
+	    		<div className="mobile"><img src="/static/mail.svg" alt="Contact"/></div>
 	    	</a>
 	    </Link></li>
 	  </ul>
@@ -27,7 +34,7 @@ export default () => (
 	  	  position: fixed;
 	  	  color: #f3f3f3;
 	  	  background-color: #000;
-	  	  z-index: 10;
+	  	  z-index: 200;
 	  	  top: 0;
 	  	  right: 0;
 	  	  left: 0;
@@ -41,10 +48,10 @@ export default () => (
 	  	  font-weight: 300;
 	  	  font-size: 12px;
 	  	}
-	  	.menu ul { width: 50%; margin: 0; justify-content: flex-end !important; }
+	  	.menu ul { width: 70%; margin: 0; justify-content: flex-end !important; }
 	  	.menu ul li { text-align: right; margin-left: 2%; }
 	  	.menu .img-container {
-	  	  width: 50%;
+	  	  width: 30%;
 	  	  cursor: pointer;
 	  	}
 	  	.menu .img-container img {

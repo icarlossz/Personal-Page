@@ -32,7 +32,7 @@ export default () => (
         left: 0;
 
         width: 100%;
-        height: 3px;
+        height: 5px;
       }
 
       /* Fancy blur effect */

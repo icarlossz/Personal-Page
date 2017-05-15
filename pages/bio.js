@@ -21,7 +21,7 @@ const Bio = () => (
 				width: 90%;
 				margin: 0 auto;
 				max-width: 1024px;
-				font-family: Open Sans;
+				font-family: Raleway;
 			}
 			.Title { text-transform: uppercase; text-align: center; font-family: Montserrat; }
 			.txtTitle { display: none; text-transform: uppercase; font-family: Montserrat; }
@@ -34,6 +34,7 @@ const Bio = () => (
 			.txt p {
 				text-align: justify;
 				font-size: 14px;
+				line-height: 24px;
 			}
 			@media screen and (max-width: 1024px) {
 				.description { padding-bottom: 50px; }

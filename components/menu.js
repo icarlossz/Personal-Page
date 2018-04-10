@@ -1,35 +1,40 @@
 import React from 'react'
 import Link from 'next/link'
 
+
 export default () => (
 	<article className="menu">
 	  <div className="img-container">
-	    <Link prefetch href="/"><img src="/static/cartoon-hb.svg" alt="Cartoon"/></Link>
+	    <Link href="/">
+				<a><img src="/static/cartoon-hb.svg" alt="Cartoon" /></a>
+			</Link>
 	  </div>
+
 	  <ul>
-	    <li><Link prefetch href="/bio">
+	    <li><Link href="/bio">
     		<a>
    				<svg><rect x="0" y="0" fill="none" width="100%" height="100%" /></svg>
-   				Biografia
+   				Biography
     			<div className="mobile"><img src="/static/avatar.svg" alt="Bio"/></div>
     		</a>
 	    </Link></li>
-	    <li><Link prefetch href="/portafolio">
+	    <li><Link href="/portafolio">
 	    	<a>
     			<svg><rect x="0" y="0" fill="none" width="100%" height="100%" /></svg>
-    			Portafolio
-	    		<div className="mobile"><img src="/static/portafolio.svg" alt="Portafolio"/></div>
+    			Portfolio
+	    		<div className="mobile"><img src="/static/portafolio.svg" alt="Portfolio"/></div>
 	    	</a>
 	    </Link></li>
-	    <li><Link prefetch href="/contact">
+	    <li><Link href="/contact">
 	    	<a>
     			<svg><rect x="0" y="0" fill="none" width="100%" height="100%" /></svg>
-    			Contacto
+    			Contact
 	    		<div className="mobile"><img src="/static/mail.svg" alt="Contact"/></div>
 	    	</a>
 	    </Link></li>
 	  </ul>
-	  <style>{`
+
+	  <style jsx global>{`
 	  	.menu {
 	  	  position: fixed;
 	  	  color: #f3f3f3;
@@ -39,10 +44,8 @@ export default () => (
 	  	  right: 0;
 	  	  left: 0;
 	  	  width: 100%;
-	  	  max-width: 850px;
-	  	  margin: 0 auto;
-	  	  padding: 2% 4%;
-	  	  display: -webkit-flex;display: -moz-flex;display: -ms-flex;display: -o-flex;display: flex;
+	  	  padding: 2%;
+	  	  display: flex;
 	  	  flex-direction: row;
 	  	  font-family: Raleway;
 	  	  font-weight: 300;
@@ -135,10 +138,12 @@ export default () => (
 			.menu a p {
 		    margin: 0;
 		    padding: 0;
-		  }
+			}
+
 		  @media screen and (orientation: landscape) and (max-height: 500px) {
         .menu { position: absolute !important; }
-      }
+			}
+
       @media screen and (max-width: 500px) {
       	.menu a { position: static; color: #000;}
       	.menu a:hover { color: #000 !important;}
@@ -157,14 +162,15 @@ export default () => (
       		width: 100%;
       		height: 100%;
       	}
-      }
+			}
+
       @media screen and (min-width: 1248px) {
       	.menu {
-      		max-width: 1200px;
-      		width: 80%;
+      		max-width: 1448px;
+      		width: 90%;
       		margin: 0 auto;
       	}
       }
-	  `}</style>
+	  `}</style>			
 	</article>
 )

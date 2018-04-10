@@ -4,7 +4,7 @@ import {Layout, Button, Input} from '../components'
 class Form extends Component {
 	render() {
 		return (
-			<form action="//formspree.io/carlosszgreen" id="Form" method="POST">
+			<form action="//formspree.io/me@carlossz.co" id="Form" method="POST">
 				<link rel="stylesheet" href="https://cdn.jsdelivr.net/alertifyjs/1.10.0/css/alertify.min.css"/>
 				<style>{`
 					.ajs-message {
@@ -12,13 +12,13 @@ class Form extends Component {
 					}
 				`}</style>
 
-				<h1 className="formTitle">Contacto</h1>
-				<Input value="Nombre" name="name" />
-				<Input value="Tel" type="tel" />
+				<h1 className="formTitle">Contact</h1>
+				<Input value="Name" name="Name" />
+				<Input value="Phone" type="phone" />
 				<Input value="Email" type="email" name="_replyto" />
 				<Input value="Subject" name="_subject" />
 				<input type="hidden" name="_next" value="http://carlossz.co/" />
-				<Input value="Mensaje" textarea />
+				<Input value="Message" textarea />
 				<Button id="sendEmail" msg="Send mail" big submit />
 				<style>{`
 					#Form {
@@ -57,5 +57,5 @@ class Form extends Component {
 	}
 }
 
-export default () => (<Layout title="Contacto" content={Form}/>)
+export default () => (<Layout title="Contact" content={Form}/>)
 

@@ -6,13 +6,13 @@ const Bio = () => (
 		<h1 className="Title">Biografia</h1>
 		<div className="logo"><img src="/static/cartoon-blue.png" alt="Logo"/></div>
 		<div className="txt">
-			<h1 className="txtTitle">Biografia</h1>
-			<p>Mi nombre es Carlos Iván Suárez pero en internet soy más conocido como Carlos Sz, soy Frontend Developer actualmente en Bogotá, Colombia, todo mi conocimiento ha sido desarrollado de forma empírica ya que no creo en los sistemas de educación tradicionales.</p>
-			<p>Asistí durante seis semestres a la universidad a la carrera de Ingeniería Electromécanica pero no me sentía satisfecho con los conocimientos que me estaban impartiendo, por ese tiempo conocí la plataforma de mejorando.la posteriormente llamada Platzi, me enamoré de su plataforma y su comunidad y actualmente soy parte de ella. Junto con la plataforma de Treehouse son mis dos sitios preferidos para estudiar. </p>
-			<p>Mis conocimientos están enfocados en el diseño de interfaz de usuario (UI) y experiencia de usuario (UX), también el desarrollo de sitios y aplicaciones web en Html, Css, Javascript, actualmente enfocandome en ReactJS.</p>
-			<p>Mi experiencia ha sido como técnico en sistemas al principio, luego como Diseñador Web y áctualmente como líder de Frontend en la oficina de Bogotá de la multinacional DDB, el cargo que hasta el momento considero que es lo que deseo hacer toda mi vida y disfruto mucho. Soy parte del programa de expertos en productos de Google desde el año 2011 el cual me ha permitido conocer muchos países y vivir la cultura Googler a la cual espero pertenecer en poco tiempo.</p>
-			<p>Me encanta viajar, la música, la tecnología, el diseño, la programación, los idiomas (hablo Inglés fluído y estoy aprendiendo Francés) y salir de mi zona de confort siempre que puedo ya que me parece la mejor forma de lograr grandes cosas.</p>
-			<Button msg="Descarga mi CV" target href="//drive.google.com/file/d/0B_gktS92l6CCb1lfaGgyWTBOeDg/view" dark />
+			<h1 className="txtTitle">Biography</h1>
+			<p>My name is Carlos Iván Suárez but on the internet I use the username @iCarlosSz, I'm Frontend Developer currently living in Bogotá, Colombia, all my knowledge has been developed empirically because I don't believe in traditional education systems.</p>
+			<p>I attended for six semesters at the university to the career of Electromechanical Engineering but I was not satisfied with the knowledge they were teaching me, for that time I got to know the Platzi platform, I fell in love with his platform and his community and now I am part of it. Along with the Treehouse platform they are my two favorite places to study. </p>
+			<p>My knowledge is focused on user interface design (UI) and user experience (UX), also the development of web sites and applications in HTML, CSS, Javascript, currently focusing on ReactJS with Graphql, Redux and Apollo.</p>
+			<p>My experience has been as a systems technician at first, then as a Web Designer and Frontend Developer in the multinational DDB and currently as a Frontend leader in a startup called ComparaMejor. I'm part of the Google's product expert program since 2011 which has allowed me to get to know many countries and experience the Googler culture from within, with its processes, methodologies and offices in several countries.</p>
+			<p>I love travelling, music, technology, design, programming, languages (I speak fluent English and I am learning French) and getting out of my comfort zone whenever I can as it seems to me the best way to achieve great things.</p>
+			<Button msg="Download my CV" target href="//drive.google.com/file/d/0B_gktS92l6CCb1lfaGgyWTBOeDg/view" dark />
 		</div>
 		<style>{`
 			.description {
@@ -65,4 +65,4 @@ const Bio = () => (
 	</div>
 )
 
-export default () => (<Layout title="Biografia" content={Bio}/>)
+export default () => (<Layout title="Biography" content={Bio}/>)
